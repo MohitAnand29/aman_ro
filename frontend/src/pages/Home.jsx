@@ -86,7 +86,7 @@ const Home = () => {
               {/* Main Image Container */}
               <div className="absolute inset-4 rounded-full bg-gradient-to-tr from-blue-100 to-white shadow-2xl overflow-hidden border-8 border-white p-2 group">
                 <img 
-                  src="https://images.unsplash.com/photo-1548811579-017fac23fa65?q=80&w=800&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1548811579-017fac23fa65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Crystal clear water" 
                   className="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform duration-700"
                 />
@@ -94,7 +94,7 @@ const Home = () => {
               </div>
 
               {/* Floating Cards */}
-              <div className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl w-48 border border-slate-100 animate-float">
+              <div className="absolute -top-2 -right-2 bg-white p-4 rounded-2xl shadow-xl w-48 border border-slate-100 animate-float z-20">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
                     <CheckCircle size={20} />
@@ -123,22 +123,22 @@ const Home = () => {
       </section>
 
       {/* Brands Banner */}
-      <div className="border-y border-slate-200 bg-white shadow-sm relative z-20 w-full py-8">
-        <div className="max-w-7xl mx-auto px-4 overflow-hidden">
-          <p className="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Expert Service For All Brands</p>
-          <div className="flex justify-center flex-wrap gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 font-black text-2xl md:text-3xl text-slate-800">
-            <span>KENT</span>
-            <span>AQUAGUARD</span>
-            <span>PUREIT</span>
-            <span>LIVPURE</span>
-            <span>BLUE STAR</span>
+      <div className="border-y border-slate-200 bg-white shadow-sm relative z-20 w-full py-10 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-8">Expert Service For All Major Brands</p>
+          <div className="flex justify-center flex-wrap gap-x-12 gap-y-8 md:gap-x-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 font-black text-2xl md:text-3xl lg:text-4xl text-slate-800 tracking-tighter">
+            <span className="hover:text-blue-600 transition-colors">KENT</span>
+            <span className="hover:text-cyan-600 transition-colors">AQUAGUARD</span>
+            <span className="hover:text-blue-500 transition-colors">PUREIT</span>
+            <span className="hover:text-indigo-600 transition-colors">LIVPURE</span>
+            <span className="hover:text-sky-600 transition-colors">BLUE STAR</span>
           </div>
         </div>
       </div>
 
       {/* Stats Section with sleek overlapping layout */}
-      <section className="relative z-30 -mt-8 mx-auto max-w-6xl px-4 hidden md:block">
-        <div className="bg-slate-900 rounded-3xl shadow-2xl p-8 grid grid-cols-4 gap-8 divide-x divide-slate-800">
+      <section className="relative z-30 mt-12 mb-12 mx-auto max-w-6xl px-4 hidden md:block">
+        <div className="bg-slate-900 rounded-3xl shadow-2xl p-10 grid grid-cols-4 gap-8 divide-x divide-slate-800">
           {[
             { label: 'Expert Technicians', value: '70+', icon: PenTool },
             { label: 'Years Experience', value: '10+', icon: Award },
@@ -241,7 +241,7 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 relative">
               <div className="aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl relative group">
-                <img src="https://images.unsplash.com/photo-1581092921461-7031e4bf0e56?q=80&w=800&auto=format&fit=crop" alt="Technician" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="https://images.unsplash.com/photo-1581092921461-7031e4bf0e56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Technician" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-white inline-block">
