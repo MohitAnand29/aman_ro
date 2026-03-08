@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Settings, PenTool, Wrench, Droplets, CheckCircle2 } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -46,6 +47,10 @@ const Services = () => {
 
   return (
     <div className="pt-24 pb-16 min-h-screen bg-slate-50">
+      <Helmet>
+        <title>Our Services | Aman RO Repair & Maintenance Patna</title>
+        <meta name="description" content="View our premium RO water purifier services including installation, repair, filter replacement, and AMC packages. Get 100% genuine parts." />
+      </Helmet>
       {/* Header */}
       <div className="bg-primary py-16 mb-12 relative overflow-hidden">
         {/* Background elements */}

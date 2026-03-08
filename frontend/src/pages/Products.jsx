@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -57,6 +58,10 @@ const Products = () => {
 
   return (
     <div className="pt-24 pb-16 min-h-screen bg-slate-50">
+      <Helmet>
+        <title>Buy RO Water Purifiers | Kent & AquaGuard | Aman RO Services</title>
+        <meta name="description" content="Shop for the best RO water purifiers in Patna. We offer Kent, AquaGuard, and PureIt at the best prices with free installation." />
+      </Helmet>
       {/* Header */}
       <div className="bg-primary py-16 mb-12 text-center text-white px-4">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Latest <span className="text-blue-200">RO Purifiers</span></h1>

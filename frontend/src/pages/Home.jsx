@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Clock, CheckCircle, Wrench, ArrowRight, Droplets, PenTool, ClipboardCheck } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
     <div className="pt-20">
+      <Helmet>
+        <title>Aman RO Services | Expert Water Purifier Repair & Service in Patna</title>
+        <meta name="description" content="Aman RO Services provides top-notch RO water purifier repair, maintenance, and installation services in Patna. Book a home visit for Kent, Aquaguard, and more." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-50 to-accent/30 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">

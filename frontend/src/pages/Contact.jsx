@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,6 +40,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
+      <Helmet>
+         <title>Contact Aman RO Services | RO Repair & Installation in Patna</title>
+         <meta name="description" content="Get in touch with Aman RO Services for expert water purifier repair, installation, and filter replacement in Patna. Call us at 8092108671 for 24/7 service." />
+      </Helmet>
       {/* Hero Header */}
       <div className="bg-gradient-to-br from-blue-400 to-primary pt-32 pb-40 text-center relative overflow-hidden">
         {/* Subtle background overlay */}
